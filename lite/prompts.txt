@@ -1,0 +1,2 @@
+June 5, 26
+Inside @testingsuite provide a boilerplate html project with connection to css files that can result in responsive web design, with CDN connection to lucide via jsdelivr

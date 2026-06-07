@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Boilerplate</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo" data-lucide="leaf"></span>
+      <h1>Rustic &amp; Redefined</h1>
+    </div>
+    <nav class="site-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h2>Responsive design made easy</h2>
+        <p>Build layouts that adapt to any screen using a simple HTML and CSS starter.</p>
+        <a class="button" href="#services">Explore</a>
+      </div>
+      <div class="hero-image">
+        <div class="feature-card">
+          <span data-lucide="smartphone"></span>
+          <h3>Mobile first</h3>
+          <p>Optimized views for phones, tablets, and desktops.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards" id="services">
+      <article>
+        <span data-lucide="layout"></span>
+        <h3>Flexible Layouts</h3>
+        <p>Use CSS grid and flexbox to create modern responsive pages.</p>
+      </article>
+      <article>
+        <span data-lucide="palette"></span>
+        <h3>Style System</h3>
+        <p>Easy-to-customize colors, spacing, and typography.</p>
+      </article>
+      <article>
+        <span data-lucide="shield-check"></span>
+        <h3>Accessible</h3>
+        <p>Semantic markup for better usability and search.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <p>© 2026 Rustic &amp; Redefined. Designed for responsive testing.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js" crossorigin="anonymous"></script>
+  <script>
+    function initLucide() {
+      if (window.lucide && typeof lucide.createIcons === 'function') {
+        lucide.createIcons();
+      } else {
+        console.warn('Lucide did not load; icons may not render.');
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      window.addEventListener('DOMContentLoaded', initLucide);
+    } else {
+      initLucide();
+    }
+  </script>
+</body>
+</html>
